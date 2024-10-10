@@ -9,9 +9,10 @@
         integrity="sha256-tq2XQC7duQPnpdenPuR6Z5IE773aRSGjkcutnfUJuTI=" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col">
+    <!-- Navbar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
-        <h1 class="text-2xl">GREENDEN</h1>
+        <a href="index.html" class="text-2xl">GREENDEN</a>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -28,58 +29,63 @@
                 <a href="contact.html" class="hover:underline hover:text-black">Contact</a>
             </li>
         </ul>
-
     </nav>
-    <section class="text-center">
-        <h1 class="font-bold text-3xl mt-6">Our Products</h1>
-        <input class="w-4/5 border border-black mt-4 p-2" placeholder="Search for a Product">
+
+    <!-- Main Content -->
+    <section class="flex-grow">
+        <section class="text-center">
+            <h1 class="font-bold text-3xl mt-6">Our Products</h1>
+            <input class="w-4/5 border border-black mt-4 p-2" placeholder="Search for a Product">
+        </section>
+
+        <section class="grid grid-cols-2 md:grid-cols-4 m-6 text-center">
+            <div class="mt-5"><img src="./images/Bestseller 1.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div class="mt-5"><img src="./images/Bestseller 2.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div class="mt-5"><img src="./images/Bestseller 3.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div class="mt-5"><img src="./images/Bestseller 4.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div class="mt-5"><img src="./images/Bestseller 3.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div class="mt-5"><img src="./images/Bestseller 2.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div class="mt-5"><img src="./images/Bestseller 4.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+            </div>
+            <div class="mt-5"><img src="./images/Bestseller 1.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+            </div>
+        </section>
     </section>
-    <section class="grid grid-cols-2 md:grid-cols-4 m-6 text-center min-h-screen">
-        <div class="mt-5"><img src="./images/Bestseller 1.jpg" alt=""
-                class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-        </div>
-        <div class="mt-5"><img src="./images/Bestseller 2.jpg" alt=""
-                class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-        </div>
-        <div class="mt-5"><img src="./images/Bestseller 3.jpg" alt=""
-                class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-        </div>
-        <div class="mt-5"><img src="./images/Bestseller 4.jpg" alt=""
-                class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-        </div>
-        <div class="mt-5"><img src="./images/Bestseller 3.jpg" alt=""
-                class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-        </div>
-        <div class="mt-5"><img src="./images/Bestseller 2.jpg" alt=""
-                class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-        </div>
-        <div class="mt-5"><img src="./images/Bestseller 4.jpg" alt=""
-                class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-        </div>
-        <div class="mt-5"><img src="./images/Bestseller 1.jpg" alt=""
-                class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-        </div>
-    </section>
-    <footer class="bg-green-100 p-4 w-full ">
+
+    <!-- Footer -->
+    <footer class="bg-green-100 p-4 w-full">
         <h1 class="text-2xl font-medium">Greenden</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dignissimos dolorem animi obcaecati earum
-            nulla.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dignissimos dolorem animi obcaecati earum nulla.</p>
     </footer>
 </body>
 
