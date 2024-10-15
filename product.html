@@ -10,6 +10,7 @@
 </head>
 
 <body class="min-h-screen flex flex-col">
+
     <!-- Navbar -->
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl sticky top-0 z-10">
         <a href="index.html" class="text-2xl">GREENDEN</a>
@@ -32,58 +33,53 @@
     </nav>
 
     <!-- Main Content -->
-    <section class="grid grid-cols-2 md:grid-cols-4 m-6 text-center">
-        <div class="mt-5">
-            <img src="./images/Bestseller 1.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-            <!-- Buttons -->
-            <div class="mt-2">
-                <button class="bg-green-500 text-white p-2 rounded hover:bg-green-600" onclick="buyNow()">Buy Now</button>
-                <button class="bg-gray-200 p-2 rounded hover:bg-gray-300 ml-2" onclick="addToCart()">Add to Cart</button>
+    <section class="flex-grow">
+        <section class="text-center">
+            <h1 class="font-bold text-3xl mt-6">Our Products</h1>
+            <input class="w-4/5 border border-black mt-4 p-2" placeholder="Search for a Product">
+        </section>
+
+        <section class="grid grid-cols-2 md:grid-cols-4 m-6 text-center">
+            <div class="mt-5"><img src="./images/Bestseller 1.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+                <!-- Buttons -->
+                <div class="mt-2">
+                    <button class="bg-green-500 text-white p-2 rounded hover:bg-green-600" onclick="buyNow()">Buy Now</button>
+                    <button class="bg-gray-200 p-2 rounded hover:bg-gray-300 ml-2" onclick="addToCart()">Add to Cart</button>
+                </div>
             </div>
-        </div>
-    
-        <div class="mt-5">
-            <img src="./images/Bestseller 2.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-            <!-- Buttons -->
-            <div class="mt-2">
-                <button class="bg-green-500 text-white p-2 rounded hover:bg-green-600" onclick="buyNow()">Buy Now</button>
-                <button class="bg-gray-200 p-2 rounded hover:bg-gray-300 ml-2" onclick="addToCart()">Add to Cart</button>
+            <div class="mt-5"><img src="./images/Bestseller 2.jpg" alt=""
+                    class="inline hover:shadow-xl transform hover:-translate-y-2">
+                <p>Rose Plant</p>
+                <p>$20</p>
+                <!-- Buttons -->
+                <div class="mt-2">
+                    <button class="bg-green-500 text-white p-2 rounded hover:bg-green-600" onclick="buyNow()">Buy Now</button>
+                    <button class="bg-gray-200 p-2 rounded hover:bg-gray-300 ml-2" onclick="addToCart()">Add to Cart</button>
+                </div>
             </div>
-        </div>
-    
-        <div class="mt-5">
-            <img src="./images/Bestseller 3.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-            <!-- Buttons -->
-            <div class="mt-2">
-                <button class="bg-green-500 text-white p-2 rounded hover:bg-green-600" onclick="buyNow()">Buy Now</button>
-                <button class="bg-gray-200 p-2 rounded hover:bg-gray-300 ml-2" onclick="addToCart()">Add to Cart</button>
-            </div>
-        </div>
-    
-        <div class="mt-5">
-            <img src="./images/Bestseller 4.jpg" alt="" class="inline hover:shadow-xl transform hover:-translate-y-2">
-            <p>Rose Plant</p>
-            <p>$20</p>
-            <!-- Buttons -->
-            <div class="mt-2">
-                <button class="bg-green-500 text-white p-2 rounded hover:bg-green-600" onclick="buyNow()">Buy Now</button>
-                <button class="bg-gray-200 p-2 rounded hover:bg-gray-300 ml-2" onclick="addToCart()">Add to Cart</button>
-            </div>
-        </div>
+            <!-- Other products go here in the same format -->
+        </section>
     </section>
-    
 
     <!-- Footer -->
-    <footer class="bg-green-100 p-4 w-full">
+    <footer class="bg-green-100 p-4 w-full mt-auto">
         <h1 class="text-2xl font-medium">Greenden</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, dignissimos dolorem animi obcaecati earum nulla.</p>
     </footer>
+
+    <script>
+        function buyNow() {
+            window.location.href = 'checkout.html';
+        }
+
+        function addToCart() {
+            alert('Product added to cart!');
+        }
+    </script>
+
 </body>
 
 </html>
